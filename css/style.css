@@ -6,14 +6,27 @@ body{
   color: #333333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+
+
+/* Collect, create and: */
+h1 {font-family: Montserrat-Bold;
+font-size: 48px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-shadow: 0 2px 2px #333333;
+}
+
+ h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
-h2 {
-  font-size: 36px;
-  font-weight: normal;
-  margin-bottom: 5px;
+#subhead {
+  font-family: Raleway-Light;
+  font-size: 26px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 29px;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.50);
 }
 
 p {
@@ -48,3 +61,128 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Header */
+
+header {
+  color: #FFFFFF
+  background: #4F7FB4;
+  background-image: linear-gradient(-180deg, rgba(79,127,180,0.25) 0%, rgba(9,63,123,0.39) 55%, rgba(33,119,213,0.43) 85%, #1B5290 100%);
+}
+
+header nav {
+  padding: 1em 0;
+}
+
+header nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  margin: 0;
+}
+
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin:0 15px;
+}
+
+header nav ul > li.btn-outline {
+  padding: 10px 15px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+header nav ul > li.btn-outline:hover {
+  /* Rectangle 2: */
+  background: #DA4C00;
+  box-shadow: 0 2px 0 0 rgba(141,49,0,0.50);
+  border: 2px solid #DA4C00;
+  border-radius: 4px;
+}
+
+header nav ul > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header nav ul > li.btn-outline:hover > a {
+  color: #FFFFFF;
+}
+
+header .hero {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+header .hero h1 {
+  font-size: 48px;
+  font-weight: normal;
+  margin: 95px 0 0;
+}
+
+header .hero p {
+font-size: 22px;
+line-height: 26px;
+font-weight: 100px;
+margin: 10px 0 40px;
+}
+
+header .hero img {
+  display: block;
+  margin: 3em auto 0;
+}
+
+.btn {
+/* Rectangle 5: */
+background: #DA4C00;
+box-shadow: 0 2px 0 0 #8D3100;
+border-radius: 4px;
+display: inline-block;
+width: 294px;
+text-align: center;
+
+/* Rectangle 5: */
+
+/* Start Your Free 30-D: */
+
+/* Start Your Free 30-D: */
+font-family: Raleway-Bold;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0;
+padding: 20px;
+text-decoration: none;
+}
+
+span {
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+}
+
+/* Benefits */
