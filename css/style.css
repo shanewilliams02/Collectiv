@@ -35,6 +35,9 @@ p {
   font-weight: 300;
 }
 
+li {
+  list-style-type: none;
+}
 /* Grid */
 .container {
   margin-right: auto;
@@ -60,6 +63,69 @@ p {
   position: relative;
   min-height: 1px;
   margin: 0 2% 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+  /*body {
+    background-color: red;
+  }*/
+
+header .container {
+    width: 360px;
+  }
+
+header .container > .one-half > ul {
+    width: 300px !important;
+    margin:0 auto !important;
+    padding: 20px;
+}
+
+  }
+
+  .container.hero > img {
+    width: 100%;
+  }
+
+  .container.hero > h1 {
+    font-size: 1.75em;
+    padding-bottom: 0 px;
+  }
+
+  .container.hero > h1 > br {
+    display: none;
+  }
+
+  .container.hero > #subhead {
+    font-size: 1em;
+    text-align: center;
+    /*word-spacing: -0.5px;*/
+    line-height: 20px;
+  }
+
+  .container.hero > a {
+    width: 200px;
+    font-size: 14px;
+    padding: 15px 10px ;
+    margin: 0px;
+
+  }
+
+  .container.hero > .btn > span {
+    font-size: 14px;
+  }
+
+
+  .container.hero br {
+    display: none;
+  }
+
+  .one-half > ul {
+    display: inline;
+    text-align: center;
+    float: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -186,3 +252,16 @@ span {
 }
 
 /* Benefits */
+
+.benefits > .container {
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.benefits > .container br {
+  display: none;
+}
+
+.benefits > .container > .container {
+  list-style-type: none;
+}
