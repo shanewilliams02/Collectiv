@@ -2,6 +2,7 @@ html, body {
   overflow: x-hidden;
 }
 body{
+  background-color: #F7F7F7;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   color: #333333;
 }
@@ -24,7 +25,7 @@ text-shadow: 0 2px 2px #333333;
 }
 p {
   font-family: Raleway-Regular;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 21px;
 }
 li {
@@ -90,14 +91,14 @@ li {
     margin: 0px 20px;
   }
 
-  .container.hero > img {
-    width: 50%;
+  .container.hero img {
+    width: 100%;
   }
-  .container.hero > h1 {
+  .container.hero h1 {
     font-size: 2em;
     padding-bottom: 10px;
   }
-  .container.hero > h1 > br {
+  .container.hero h1 br {
     display: none;
   }
   .container.hero > #subhead {
@@ -175,13 +176,13 @@ header nav ul {
   text-align: right;
   float: right;
   margin: 0;
+  font-size: 22px;
 }
 header nav ul > li {
   list-style-type: none;
   display: inline-block;
   margin:0 15px;
 }
-
 header nav ul > li.btn-outline {
   padding: 10px 15px;
   border: 2px solid #FFFFFF;
@@ -243,20 +244,6 @@ span {
   font-size: 18px;
 }
 
-.pricing-btn {
-background: #DA4C00;
-box-shadow: 0 2px 0 0 #8D3100;
-border-radius: 4px;
-display: inline-block;
-width: 294px;
-text-align: center;
-font-family: Raleway-Bold;
-font-size: 18px;
-color: #FFFFFF;
-letter-spacing: 0;
-padding: 20px;
-text-decoration: none;
-}
 
 /* Benefits */
 
@@ -266,9 +253,17 @@ text-decoration: none;
   position: relative;
   padding-top: 40px;
 }
+.benefits h2 {
+  font-size: 36px;
+  color: #245487;
+}
+.benefits .container p {
+  font-size: 20px;
+  line-height: normal;
+}
 .benefits ul {
   margin: 0 auto;
-  padding: 4em 0;
+  padding: 2em 0;
 }
 .benefits ul li {
   list-style-type: none;
@@ -282,41 +277,63 @@ text-decoration: none;
 }
 .benefits h3 {
   color: #245487;
+  font-size: 32px;
 }
-
-/*
-.benefits > .container {
-  text-align: center;
-  margin: 0px 40px;
-  padding-top: 50px;
+.benefits p {
+  margin: 0 10px 30px;
 }
-*/
-
-/*
-.benefits > .container > .container {
-  list-style-type: none;
+.benefits-img {
+  margin: 50px 0px;
 }
-*/
+.benefits-img img {
+  width: 40%;
+  display: inline-block;
+}
+.benefits .btn {
+  margin: 30px 0px 40px 0px;
+}
 
 /* Testimonials */
 
 .testimonials {
-  padding: 4em 0;
+  padding: 3em 0;
 }
-
+.testimonials h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #245487;
+}
+.testimonials .container-head p {
+  font-size: 20px;
+  line-height: normal;
+}
+.testimonials .container-head{
+  text-align: center;
+  margin-bottom: 50px;
+}
 .testimonials blockquote {
   /* “Collectiv has made: */
 font-family: Raleway-Italic;
-font-size: 16px;
+font-size: 18px;
 color: #333333;
-position: relative;
-padding: 0px;
-letter-spacing: 0;
+position: absolute;
+padding-left: 190px;
+letter-spacing: 0px;
 line-height: 21px;
+float: right;
+clear: left;
+margin: 0px -50px 0px 0px;
 }
 .testimonials span {
   font-family: Raleway-Regular;
-  font-size: 16px;
+  font-size: 18px;
+}
+.testimonials .testimonials-img{
+display: inline-block;
+float: left;
+}
+.testimonials .name {
 }
 
 
@@ -330,19 +347,20 @@ line-height: 21px;
   background-size: cover;
   text-align: center;
   padding: 4em 0;
+  clear: both;
 }
 .pricing h2 {
 font-family: Montserrat-SemiBold;
-font-size: 28px;
+font-size: 36px;
 color: #FFFFFF;
 letter-spacing: 0;
 }
 .pricing p {
   font-family: Raleway-Regular;
-  font-size: 16px;
+  font-size: 20px;
   color: #FFFFFF;
   letter-spacing: 0;
-  line-height: 23px;
+  line-height: normal;
   padding: 10px 0px 50px 0px;
 }
 pricing ul {
@@ -352,7 +370,6 @@ pricing ul {
 pricing ul li {
   list-style-type: none;
 }
-
 .box {
   padding: 0 15px 15px;
   background: #FFFFFF;
@@ -368,7 +385,7 @@ pricing ul li {
 }
 .box h3{
   font-family: Raleway-Bold;
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -385,22 +402,37 @@ pricing ul li {
 .box h4 {
   font-size: 60px;
   font-weight: normal;
-  margin: 40px 0 10px;
+  margin: 40px 10px -10px;
   color: #245487;
 }
 .box h4 span {
-/*  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 32px;
-  vertical-align: top; */
-
-  /* $: */
 font-family: Montserrat-SemiBold;
 font-size: 32px;
 color: #245487;
-letter-spacing: -2px;
+letter-spacing: -10px;
 text-shadow: 0 1px 2px rgba(0,0,0,0.20);
 vertical-align: super;
 margin-left: -10px;
+}
+.box #price-middle {
+  font-family: Montserrat-Bold;
+}
+.box #price-middle span {
+  font-family: Montserrat-Bold;
+  font-size: 32px;
+  color: #245487;
+  letter-spacing: -10px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.20);
+  vertical-align: super;
+  margin-left: -10px;
+}
+.box #price-middle span.month{
+  font-family: "Raleway-Regular", Helvetica, Arial, sans-serif;
+  font-weight: 100:400;
+  color: #888888;
+  font-size: 20px;
+  letter-spacing: 0px;
+  vertical-align: middle;
 }
 .box h4 span.month {
   font-family: "Raleway-Regular", Helvetica, Arial, sans-serif;
@@ -410,24 +442,43 @@ margin-left: -10px;
   letter-spacing: 0;
   vertical-align: middle;
 }
+.box ul {
+  display: inline;
+}
 .box ul li {
   font-size: 18px;
   color: #333333;
   letter-spacing: 0;
   line-height: 50px;
 }
-.box .pricing-btn {
-  position: absolute;
-  bottom: 40px;
-  left: 20px;
-  right: 20px;
+.pricing-btn {
+background: #DA4C00;
+box-shadow: 0 2px 0 0 #8D3100;
+border-radius: 4px;
+display: inline-block;
+width: 294px;
+text-align: center;
+font-family: Raleway-Bold;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0;
+padding: 20px;
+text-decoration: none;
+position: absolute;
+bottom: 40px;
+left: 10px;
+width: 250px;
+margin-left: 15px;
 }
-.disclaimer {
-  font-family: Raleway-Italic;
-  font-size: 20px;
-  color: #FFFFFF;
-  letter-spacing: 0;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+.container .disclaimer {
+font-family: Raleway-Italic;
+font-size: 20px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+clear:both;
+padding-top: 40px;
+padding-bottom: 0px;
 }
 
 /* Footer */
@@ -445,7 +496,7 @@ footer p, footer nav ul {
   font-size: 14px;
   font-weight: 100;
   text-align: center;
-  margin: 10px auto 0;
+  margin: 10px -20px 0;
 }
 footer nav ul li {
   list-style-type: none;
@@ -463,6 +514,7 @@ footer .logo{
   margin: 0 auto;
   display: block;
 }
+
 
 @media (min-width: 992px) {
   footer{
