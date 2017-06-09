@@ -57,11 +57,7 @@ li {
 
 /* Media Queries */
 
-@media (max-width: 480px) {
-  /*body {
-    background-color: red;
-  }*/
-
+@media (min-width: 480px) {
   header .container {
     width: 360px;
   }
@@ -140,6 +136,7 @@ li {
   .container {
     width: 750px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -259,7 +256,7 @@ span {
 }
 .benefits .container p {
   font-size: 20px;
-  line-height: normal;
+  line-height: 28px;
 }
 .benefits ul {
   margin: 0 auto;
@@ -306,7 +303,7 @@ span {
 }
 .testimonials .container-head p {
   font-size: 20px;
-  line-height: normal;
+  line-height: 28px;
 }
 .testimonials .container-head{
   text-align: center;
@@ -320,7 +317,7 @@ color: #333333;
 position: absolute;
 padding-left: 190px;
 letter-spacing: 0px;
-line-height: 21px;
+line-height: 28px;
 float: right;
 clear: left;
 margin: 0px -50px 0px 0px;
@@ -335,8 +332,6 @@ float: left;
 }
 .testimonials .name {
 }
-
-
 
 /* Pricing */
 
