@@ -18,13 +18,13 @@
 <body class="dashboard">
   <!-- LEFT NAV -->
   <nav id="left-nav" class="left-nav">
-    <a href="index.html" class="site-logo"><img src="images/Collectiv - Logo.png" alt="Collectiv" /></a>
+    <a href="dashboard.html" class="site-logo"><img src="images/Collectiv - Logo.png" alt="Collectiv" /></a>
     <div class="items">
       <p>Items</p>
       <ul>
-        <li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
+        <li><a href="dashboard.html"><i class="fa fa-th-large"></i> All Items</a></li>
         <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
-        <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
+        <li class="active"><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
         <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
       </ul>
         <p>Collections</p>
@@ -40,8 +40,14 @@
     <section class="content">
       <div class="container">
         <div class="header">
-          <h1>All Items</h1>
-          <a href="#" class="btn">+ Add</a>
+          <h1>All Images:</h1>
+          <h2>By Date Added</h2>
+          <i class="fa fa-angle-down"></i>
+          <a href="#" class="btn"><span>+ Add</span></a>
+          <div class="search-box-wrapper">
+            <input type="text" placeholder="Search by Keywords or Tags..." class="search-box-input" />
+            <button class="search-box-button"><i class="fa fa-search"></i></button>
+          </div>
         </div>
       </div>
       <div class="container">
