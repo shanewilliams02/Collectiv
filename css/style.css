@@ -31,7 +31,9 @@ p {
 li {
   list-style-type: none;
 }
+
 /* Grid */
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -55,26 +57,23 @@ li {
   margin: 0 2% 20px;
 }
 
-/* Media Queries */
+/* Header */
 
-@media (min-width: 480px) {
-  header .container {
-    width: 360px;
-  }
-  header nav .one-half > a {
-    margin-left: 95px;
+  header nav .one-half .site-logo img {
+    margin-left: 180px;
   }
   header nav ul > li {
     list-style-type: none;
     width: 100px;
     font-size: 20px;
     padding: 30px 20px;
-    margin: 0px;
-    display: inline-table !important;
+    display: inline-block;
+  }
+  header nav .one-half > ul {
+    margin: 0px 10px;
   }
   header .container > .one-half > ul {
-    width: 300px !important;
-    margin: 0px -65px !important;
+    width: 335px;
     padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
@@ -86,9 +85,8 @@ li {
     order: 1;
     margin: 0px 20px;
   }
-
-  .container.hero img {
-    width: 100%;
+  .container > img {
+    width: 80%;
   }
   .container.hero h1 {
     font-size: 2em;
@@ -98,10 +96,10 @@ li {
     display: none;
   }
   .container.hero > #subhead {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
     word-spacing: -0.5px;
-    line-height: 20px;
+    line-height: 25px;
   }
   .container.hero > a {
     width: 200px;
@@ -112,32 +110,87 @@ li {
   .container.hero > .btn > span {
     font-size: 14px;
   }
-  .container.hero br {
-    display: none;
-  }
-
   .one-half > ul {
     display: inline;
     text-align: center;
     float: center;
   }
-
-
-  /* Benefits Mobile */
-
   .benefits > .container {
     padding-top: 30px;
   }
   .benefits > .container br {
     display: none;
   }
-}
+
+/* Media Queries */
 
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
-
+  header nav .one-half .site-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header nav ul > li {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0px 0px;
+    display: inline-block;
+  }
+  header nav .one-half > ul {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .container > .one-half > ul {
+    width: 335px;
+    padding: 0px;
+    display: inline-block;
+    flex-direction: column;
+    
+  }
+  header .container > .one-half > ul > li:first-child {
+    order: 2;
+  }
+  header .container > .one-half > ul > li:nth-child(2) {
+    order: 1;
+    margin: 0px 20px;
+  }
+  .container > img {
+    width: 70%;
+  }
+  .container.hero h1 {
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  .container.hero > #subhead {
+    font-size: 1.5em;
+    text-align: center;
+    word-spacing: -0.5px;
+    line-height: 30px;
+  }
+  .container.hero > a {
+    width: 294px;
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+  .container.hero > .btn > span {
+    font-size: 18px;
+  }
+  .one-half > ul {
+    display: inline;
+    text-align: center;
+    float: center;
+  }
+  .benefits > .container {
+    padding-top: 30px;
+  }
+  .benefits > .container br {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
@@ -150,11 +203,55 @@ li {
   .one-third {
     width: 29.33333%;
   }
+  header nav .one-half .site-logo img {
+    margin-left: 20px;
+    padding-left: 0px;
+  }
+  .container.hero h1 {
+    font-size: 3em;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  .container.hero > #subhead {
+    font-size: 1.5em;
+    text-align: center;
+    word-spacing: -0.5px;
+    line-height: 30px;
+  }
+  .container.hero > a {
+    width: 294px;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+header nav .one-half > ul {
+  margin: 0px 10px;
+}
+header .container > .one-half > ul {
+  width: 335px;
+  padding: 0px 20px 0px 20px;
+  display: inline-block;
+  flex-direction: column;
+  margin-right: 20px;
+
+}
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+  header nav .one-half .site-logo img {
+    margin-left: -200px;
+    padding-left: 0px;
+  }
+  header nav .one-half > ul {
+    margin: 0px 10px;
+  }
+  header .container > .one-half > ul {
+    width: 335px;
+    padding: 0px 20px 0px 20px;
+    display: inline-block;
+    margin-right: -200px;
   }
 }
 
