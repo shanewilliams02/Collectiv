@@ -795,7 +795,10 @@ letter-spacing: 0;
 .content .header .right-header {
   display: inline;
 }
-.content .header .right-header li {
+.content .header .right-header:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 .content .header .search-box-wrapper {
   display: inline-flex;
