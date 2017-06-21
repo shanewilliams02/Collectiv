@@ -24,8 +24,8 @@
     display: none;
     min-width: 140px;
     list-style: none;
-    padding: 10px 25px 10px 0px;
-	  margin: 50px 0px 0px;
+    padding: 20px;
+	  margin: 20px 0px 0px;
 }
 .dropit .dropit-open .dropit-submenu {
   display: block;
@@ -48,35 +48,38 @@
 .dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
-  margin-right: 0px;
-  padding-left: 0px;
-  margin-left: 0px;
-}
-.dropit .dropit-open .dropit-submenu li:first-child {
-  margin-right: 20px;
-}
-.dropit .dropit-open .dropit-submenu li:nth-child(2) {
-  margin-right: 5px;
 }
 .dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0px;
-  margin-right: 25px;
 }
 .dropit .dropit-open .dropit-submenu li a {
-  color: #245487;
-  text-decoration: none;
-  font-family: Montserrat-Light, Helvetica, Arial, sans-serif;
+ color:#245487;
+ text-decoration: none;
+ font-family: Raleway-Light, Helvetica, Arial, sans-serif;
 }
+.dropit .dropit-open .dropit-submenu li p {
+  text-align: center;
+  margin-top: 5px;
+}
+.dropit .dropit-open .dropit-submenu li i {
+    color: #245487;
+    padding: 5px;
+}
+/*
 .dropit .dropit-open .dropit-submenu li .fa.fa-file-o {
   color: #245487;
-  padding-right: 5px;
+  padding-right: 0px;
 }
 .dropit .dropit-open .dropit-submenu li .fa.fa-link {
   color: #245487;
-  padding-right: 5px;
+  padding-right: 0px;
 }
 .dropit .dropit-open .dropit-submenu li .fa.fa-picture-o {
   color: #245487;
   padding-right: 5px;
   padding-left: 5px;
 }
+.dropit .dropit-open .dropit-submenu li .fa.fa-gear {
+  color: #245487;
+}
+*/

@@ -796,14 +796,13 @@ letter-spacing: 0;
   display: inline;
 }
 .content .header .right-header li {
-  display: inline;
 }
 .content .header .search-box-wrapper {
   display: inline-flex;
   float: left;
   margin-top: 5px;
-  margin-left: 50px;
-  margiin-right: 0px;
+  margin-left: 40px;
+  margin-right: 0px;
 }
 .content .header .search-box-input {
 height: 1em;
@@ -841,7 +840,6 @@ letter-spacing: 0.25px;
   cursor: pointer;
   outline: 0;
   opacity: 0.5;
-  margin-left: -.25em;
 }
 .content .header .search-box-button:hover {
   border-color: #3498DB;
@@ -858,29 +856,26 @@ letter-spacing: 0.25px;
   padding: 0px;
   margin: 0px 2px;
 }
-.content .header a {
-display: inline;
-margin-right: 0px;
-}
-.content .header .settings {
-  display: inline;
-  float: right;
-  margin-right: 0;
-}
-.content .header .settings-menu img {
-  position: relative;
-  float: right;
-  height: 50px;
-  width: 50px;
-}
 .content .header .btn {
-  display: inline;
   width: 5em;
   float: left;
   margin-top: 0px;
   padding-top: 12px;
   padding-bottom: 10px;
   text-align: center;
+}
+.content .header .menu {
+  float: left;
+  margin: -15px 0px 0px 20px;
+}
+.content .header .menu a {
+  margin-left: 20px;
+}
+.content .header .settings-menu img {
+  margin-left: 35px;
+  margin-top: -18px;
+  height: 50px;
+  width: 50px;
 }
 
 /* CONTENT */
@@ -966,7 +961,6 @@ margin-right: 0px;
   top: 100px;
   left: 70px;
   bottom: 40px;
-
 }
 .item-box h2 {
   font-family: Raleway;
