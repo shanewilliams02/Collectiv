@@ -13,9 +13,12 @@
  <link rel="stylesheet" href="css/normalize.css">
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/font-awesome.css">
+ <link rel="stylesheet" href="css/dropit.css">
 
 </head>
 <body class="dashboard">
+  <!-- RESPONSIVE NAV -->
+    <a href="#" class="hamburger" id="menu">&#9776</a>
   <!-- LEFT NAV -->
   <nav id="left-nav" class="left-nav">
     <a href="dashboard.html" class="site-logo"><img src="images/Collectiv - Logo.png" alt="Collectiv" /></a>
@@ -34,22 +37,49 @@
           <li><a href="#"><i class="fa fa-plus-square"></i> New Collection</a></li>
         </ul>
     </div>
+      <div class="settings">
+        <img src="images/Avatar - Shane.png" />
+        <p>Shane Williams</p>
+        <ul class="settings-menu">
+          <li>
+            <a href="#"><i class="fa fa-cog"></i></a>
+            <ul>
+              <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+              <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+              <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
   </nav>
   <main role="main">
     <!-- CONTENT -->
-    <section class="content">
-      <div class="container">
-        <div class="header">
-          <h1>All Images:</h1>
-          <h2>By Date Added</h2>
-          <i class="fa fa-angle-down"></i>
-          <a href="#" class="btn"><span>+ Add</span></a>
-          <div class="search-box-wrapper">
-            <input type="text" placeholder="Search by Keywords or Tags..." class="search-box-input" />
-            <button class="search-box-button"><i class="fa fa-search"></i></button>
+      <section class="content">
+        <div class="container">
+          <div class="header">
+            <h1>All Items:</h1>
+            <h2>By Date Added</h2>
+            <i class="fa fa-angle-down"></i>
+            <ul class="right-header">
+              <li class="search-box-wrapper">
+                <input type="text" placeholder="Search by Keywords or Tags..." class="search-box-input" />
+                <button class="search-box-button"><i class="fa fa-search"></i></button>
+              </li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#" class="btn">+ Add</a>
+                    <ul>
+                      <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                      <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                      <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
       <div class="container">
         <div class="content-item">
           <div class="item-box">
@@ -129,6 +159,14 @@
       </div>
     </section>
   </main>
-  </main>
 </body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/dropit.js"></script>
+<script type="text/javascript">
+  $(".menu").dropit();
+  $(".settings-menu").dropit();
+  $("#menu").click(function(){
+    $("#left-nav").toggleClass("open", 200);
+  });
+</script>
 </html>
