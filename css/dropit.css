@@ -38,7 +38,7 @@
   content: " ";
   position: absolute;
   border-style: solid;
-  border-width: 0 8px 8px;
+  border-width: 0px 8px 8px;
   border-color: #FFFFFF transparent;
   display: block;
   width: 0;
@@ -68,3 +68,39 @@
     padding: 5px;
     margin: -10px 10px;
 }
+/*
+#menu-settings .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 120px;
+    list-style: none;
+    padding: 20px;
+	  margin: 20px 0px 0px;
+
+    position: absolute;
+    top: -150px;
+    right: 0; 
+    z-index: 1000;
+    display: none;
+    width: 120px;
+    list-style: none;
+    padding: 20px;
+    margin: -75px 0 0;
+}
+#menuSettings .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 142px;
+  right: 10px;
+
+}
+*/
