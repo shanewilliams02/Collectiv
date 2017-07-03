@@ -185,9 +185,6 @@ li {
   .benefits > .container {
     padding-top: 30px;
   }
-  .benefits > .container br {
-    display: none;
-  }
 }
 
 @media (min-width: 992px) {
@@ -230,7 +227,7 @@ li {
     display: inline-block;
     margin-right: 20px;
     margin-top: 0px;
-}
+  }
 }
 
 @media (min-width: 1200px) {
@@ -344,13 +341,14 @@ span {
   text-align: center;
   display: block;
   position: relative;
-  padding-top: 40px;
+  padding-top: 0px;
+  margin-bottom: 0px;
 }
 .benefits h2 {
   font-size: 36px;
   color: #245487;
 }
-.benefits .container p {
+.benefits p {
   font-size: 20px;
   line-height: 28px;
 }
@@ -397,11 +395,11 @@ span {
   margin-bottom: 30px;
   color: #245487;
 }
-.testimonials .container-head p {
+.testimonials p {
   font-size: 20px;
   line-height: 28px;
 }
-.testimonials .container-head{
+.testimonials .container {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -412,23 +410,34 @@ font-size: 18px;
 color: #333333;
 position: absolute;
 padding-left: 180px;
+padding-bottom: 10px;
 letter-spacing: 0px;
 line-height: 28px;
 float: right;
 clear: left;
-margin: 0px -40px 0px 5px;
+text-align: left;
+margin: 20px 20px 40px 10px;
 }
-.testimonials span {
+.testimonials  span {
   font-family: Raleway-Regular;
   font-size: 18px;
 }
-.testimonials .testimonials-img{
+.testimonials .one-half img{
 display: inline-block;
+margin: 20px 50px 20px 0px;
 float: left;
 }
-.testimonials .name {
+.testimonials .one-half i {
+  margin-bottom: 20px;
 }
-
+.testimonials .one-half .name {
+  margin: 195px 20px 0px -30px;
+  float: left;
+  text-align: left;
+}
+.testimonials #bottom {
+  margin-bottom: 100px;
+}
 /* Pricing */
 
 .pricing {
@@ -710,17 +719,19 @@ footer .logo{
   padding: 10px 6%;
 }
 .left-nav .items p {
-  font-family: Montserrat-Bold;
+  font-family: Montserrat;
+  font-weight: 700;
   text-transform: uppercase;
   color: #E2E2E2;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0.25px;
 }
 .left-nav .items ul {
   margin: 0 0 40px;
   padding: 0;
   font-family: Montserrat;
-  font-weight: 300;
+  font-weight: 100;
 }
 .left-nav .items ul li {
   list-style-type: none;
@@ -731,7 +742,8 @@ footer .logo{
 .left-nav .items ul li a {
   color: #FFFFFF;
   text-decoration: none;
-  font-weight: 100;
+  font-family: Montserrat;
+
 }
 .left-nav .items ul li a i {
   font-size: 16px;
@@ -739,16 +751,17 @@ footer .logo{
   margin-right: 8px;
 }
 .left-nav .items ul .active {
-font-family: Montserrat-ExtraBold;
+font-family: Montserrat;
+font-weight: 800;
 font-size: 20px;
 color: #FFFFFF;
 letter-spacing: 0;
 }
 .left-nav .items ul li a:hover {
-  font-weight: bold;
+  font-weight: 800;
 }
 .left-nav .items ul li a:active {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
 }
 .left-nav .settings {
@@ -776,12 +789,12 @@ letter-spacing: 0;
   margin: 0 0 0 10px;
   padding-right: 0px;
 }
-.left-nav .settings .settings-menu li a {
+.left-nav .settings .menu li a {
   list-style-type: none;
   display: inline-block;
   vertical-align: top;
   color: #ffffff;
-  margin: -6px 15px 20px 10px;
+  margin: -6px 10px 0px 0px;
   font-size: 18px;
 }
 
@@ -796,10 +809,13 @@ letter-spacing: 0;
 .content .header {
   margin: 0 1% -10px 10px;
 }
-.content .header h1 {
+.content .header .left-header {
+  margin-left: -40px;
+}
+.content .header .left-header h1 {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 100;
-  margin: 0 0 30px;
+  margin: 0;
   font-size: 36px;
   color: #3498DB;
   letter-spacing: 0;
@@ -808,10 +824,10 @@ letter-spacing: 0;
   display: inline-block;
   text-shadow: none;
 }
-.content .header h2 {
+.content .header .left-header h2 {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 200;
-  margin: 16px 10px 20px;
+  margin: 16px 10px 20px 10px;
   font-size: 20px;
   color: #686868;
   letter-spacing: 0;
@@ -819,13 +835,13 @@ letter-spacing: 0;
   float: left;
   display: inline-block;
 }
-.content .header i {
+.content .header .left-header i {
   color: #686868
   font-family: FontAwesome;
   font-size: 24px;
-  color: #686868;
   letter-spacing: 0;
   margin-top: 15px;
+  margin-left: 0px;
   float: left;
 }
 .content .header .right-header {
@@ -836,6 +852,7 @@ letter-spacing: 0;
   display: table;
   clear: both;
 }
+/*
 .content .header .search-box-wrapper {
   display: inline-flex;
   margin-top: 5px;
@@ -852,7 +869,6 @@ box-shadow: 0 1px 4px 0 rgba(164,164,164,0.50);
 border-radius: 4px 0px 0px 4px;
 padding: 0.5em;
 outline: 0;
-/* Search with Keywords: */
 font-family: Montserrat-Regular;
 font-size: 16px;
 color: #A4A4A4;
@@ -895,9 +911,10 @@ letter-spacing: 0.25px;
   padding: 0px;
   margin: 0px 2px;
 }
+*/
 .content .header .btn {
   width: 4em;
-  margin-top: 0px;
+  margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 10px;
   padding-left: 20px
@@ -930,7 +947,7 @@ letter-spacing: 0.25px;
   padding: 20px;
 }
 .content .container {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 /* Larger Mobile Devices */
@@ -943,7 +960,7 @@ letter-spacing: 0.25px;
   }
   .content {
     width: 46%;
-    margin: 0 2% 25px;
+    margin: 0 0 25px;
     float: left;
     display: block;
   }
